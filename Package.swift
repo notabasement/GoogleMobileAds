@@ -10,10 +10,8 @@ let package = Package(
         .library(
             name: "GoogleMobileAds",
             targets: [
-                "GoogleAppMeasurement",
                 "GoogleMobileAds",
                 "GoogleUtilities",
-                "nanopb",
                 "PromisesObjC",
                 "UserMessagingPlatform"
             ]
@@ -25,11 +23,9 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .binaryTarget(name: "GoogleAppMeasurement", path: "Frameworks/GoogleAppMeasurement.xcframework"),
         .binaryTarget(name: "PromisesObjC", path: "Frameworks/PromisesObjC.xcframework"),
         .binaryTarget(name: "GoogleMobileAds", path: "Frameworks/GoogleMobileAds.xcframework"),
         .binaryTarget(name: "GoogleUtilities", path: "Frameworks/GoogleUtilities.xcframework"),
-        .binaryTarget(name: "nanopb", path: "Frameworks/nanopb.xcframework"),
         .binaryTarget(name: "UserMessagingPlatform", path: "Frameworks/UserMessagingPlatform.xcframework"),
     ]
 )
